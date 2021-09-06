@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        div{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image : linear-gradient(#00eeff,#ffff1c);;
+        }
+        h1{
+            font-size: 1rem;
+            color: rgb(0, 73, 22);
+        }
+        p{
+            height: auto;
+            width:auto;
+            background-image: linear-gradient(#16bffd,#cb3066) ;
+            color: white;
+            line-height: 100px;
+            text-align: center;
+            font-size:19px;
+            box-shadow: 1px 1px 0px #000,
+                         2px 2px 0px rgba(0, 0, 0, 0.900),
+                         3px 3px 0px rgba(0, 0, 0, 0.700),
+                         4px 4px 0px rgba(0, 0, 0, 0.500),
+                         5px 5px 0px rgba(0, 0, 0, 0.300),
+                         7px 7px 0px rgba(0, 0, 0, 0.200),
+                         8px 8px 0px rgba(0, 0, 0, 0.500);
+             }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>your phone will be hacked tonight 12:01 'o clock</h1> <br>
+        <p id="demo"></p><br>
+        <h1>If you wannt to save your data please do not connect to internet.</h1>
+        <h1>other wise <a href="https://youtube.com/channel/UCabNg-biSQ7skg3cCi7JpFA">Subscribehttps://youtube.com/channel/UCabNg-biSQ7skg3cCi7JpFAhttps://youtube.com/channel/UCabNg-biSQ7skg3cCi7JpFA</a></h1>
+    </div>
+
+ <script>
+
+var dest = new Date("sep 8, 2021 00:00:59").getTime();
+setInterval(function(){
+var now = new Date().getTime();
+var diff = dest - now ;
+var days = Math.floor(diff / (1000*60*60*24));
+var hours = Math.floor((diff % (1000*60*60*24)) / (1000*60*60));
+var minutes =  Math.floor((diff % (1000*60*60)) / (1000*60));
+var seconds =  Math.floor((diff % (1000*60)) / 1000);
+document.getElementById("demo").innerHTML = days + " days,  " + hours + " hours: " + minutes + " minutes: " + seconds + " seconds"
+},1000);
+
+ </script>
+
+</body>
+</html>
